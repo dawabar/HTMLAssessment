@@ -1,0 +1,79 @@
+
+/* User Story #1
+Your headers should be changed to your favorite color and set to a sans-serif font. (Notice they are not all the same tag!) */
+h1, h2, h3, h4, h5, h6 {
+  color: midnightblue;
+  font-family: sans-serif;
+}
+
+/* User Story #2
+Your table should have bold/colored table headers, as well as a table border. Content should be centered in their respective blocks. */
+
+th {
+  font-weight: bold;
+  background-color: chartreuse;
+}
+
+table {
+  border: 2px black solid;
+  text-align: center;
+}
+
+/* User Story #3
+Your list should have square list bullets. */
+li {
+  list-style-type: square;
+}
+
+/* User Story #4
+When the user hovers over a hyperlink the background color of the hyperlink should change and it should not be underlined. */
+a:hover {
+  background-color: deeppink;
+  text-decoration: none;
+}
+
+/* User Story #5
+Set the background color of the block quote text (second paragraph) to a dark color and the font color to a contrasting light color. */
+blockquote {
+  color: gainsboro;
+  background-color: navy;
+}
+
+/* User Story #6
+Make each team's image the background image for the list.
+Hint Check out the element > element and :first-child / :last-child selectors.
+Remove the image from above the team's list. */
+#teamRoster > li:first-child {
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
+  max-width: 280px;
+}
+
+#teamRoster > li:last-child {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
+  max-width: 280px;
+}
+
+/* User Story #7
+The checkbox list should not be bulleted. */
+#checkbox-grid > li {
+  list-style: none;
+}
+
+/* Stretch Goals */
+
+/* Have each team's primary quarterback display in bold. */
+#teamRoster > li > ul > li > ol > li:first-child {
+  font-weight: bold;
+}
+
+/* Use CSS to give the table rows alternating background colors. */
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+tr:nth-child(even) {
+  background-color: darkgray;
+}
+
+/* Solid background images can make foreground text hard to read;
+find a way to have each team's image display behind its roster,
+but reduced intensity. Do not edit the image itself. */
